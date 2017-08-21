@@ -27,15 +27,15 @@
         if(
           scroll <= $( this ).offset().top && (
             // advance
-            ( direction == 'down' && scroll >= $( this ).offset().top - ( windowHeight * 2 / 3 ) ) ||
+            ( direction == 'down' && scroll >= $( this ).offset().top - ( windowHeight * 2 / 6 ) ) ||
             // stabilize
-            ( direction == 'up' && scroll >= $( this ).offset().top - ( windowHeight / 3 ) )
+            ( direction == 'up' && scroll >= $( this ).offset().top - ( windowHeight / 6 ) )
           ) ||
           scroll >= $( this ).offset().top && (
             // advance
-            ( direction == 'up' && scroll <= $( this ).offset().top + ( windowHeight * 2 / 3 ) ) ||
+            ( direction == 'up' && scroll <= $( this ).offset().top + ( windowHeight * 2 / 6 ) ) ||
             // stabilize
-            ( direction == 'down' && scroll <= $( this ).offset().top + ( windowHeight / 3 ) )
+            ( direction == 'down' && scroll <= $( this ).offset().top + ( windowHeight / 6 ) )
           )
         ){
           $( 'body:not( .lock-scroll )' ).addClass( 'lock-scroll' );
@@ -49,9 +49,6 @@
           settings.speed,
           function(){
             $( 'body.lock-scroll' ).removeClass( 'lock-scroll' );
-            /*setTimeout( function(){
-              $( 'body.lock-scroll' ).removeClass( 'lock-scroll' );
-            }, 600 );*/
           }
         );
       }
