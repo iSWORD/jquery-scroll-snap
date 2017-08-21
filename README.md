@@ -11,9 +11,6 @@ Support: Chrome, Firefox, Safari, IE8+
 Include jQuery (1.7+) and the jQuery Scroll Snap plugin files.
 
 ```html
-<!-- jQuery Scroll Snap Stylesheet -->
-<link rel="stylesheet" href="jquery-scroll-snap/jquery-scroll-snap.css">
-
 <!-- jQuery Scroll Snap Plugin -->
 <script src="jquery-scroll-snap/jquery-scroll-snap.js"></script>
 ```
